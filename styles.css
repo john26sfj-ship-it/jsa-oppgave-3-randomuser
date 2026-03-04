@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.output-container {
+  justify-self: end;
+  width: 25%;
+  border: 1px solid black;
+}
+
+#users-container {
+  border: 1px solid black;
+  min-width: 25%;
+  gap: 10px;
+}
