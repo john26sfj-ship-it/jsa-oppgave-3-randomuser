@@ -5,11 +5,14 @@ body {
 .output-container {
   justify-self: end;
   width: 25%;
-  border: 1px solid black;
+}
+
+.borders {
+  border: 1px solid lightgreen;
+  border-radius: 5px;
 }
 
 #users-container {
-  border: 1px solid black;
   min-width: 25%;
   gap: 10px;
 }

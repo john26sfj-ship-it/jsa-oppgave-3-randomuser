@@ -1,6 +1,7 @@
 // Define const variables.
 const apiUrl = `https://randomuser.me/api/`;
 const fetchUserBtn = document.getElementById("fetch-user");
+const fetch10UsersBtn = document.getElementById("fetch-10-users");
 const clearUsers = document.getElementById("clear-users");
 
 /*
@@ -55,6 +56,7 @@ function outputRandomUser(first, last, email) {
   if (usersContainer) {
     const userDiv = document.createElement(`div`);
     userDiv.classList.add("user-div");
+    userDiv.classList.add("borders");
 
     const userName = document.createElement("p");
     userName.classList.add("user-name");
@@ -80,6 +82,10 @@ function outputRandomUser(first, last, email) {
 
 fetchUserBtn.addEventListener("click", () => {
   fetchRandomUser();
+});
+
+fetch10UsersBtn.addEventListener("click", () => {
+  fetchRandomUser(10);
 });
 
 clearUsers.addEventListener("click", () => {
